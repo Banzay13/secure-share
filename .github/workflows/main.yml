@@ -1,6 +1,7 @@
 name: remote ssh command
 on: [push]
 jobs:
+
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -8,7 +9,8 @@ jobs:
     - name: executing remote ssh commands using password
       uses: appleboy/ssh-action@master
       with:
-    host: ${{ secrets.TRTITONHOST }}
-    username: ${{ secrets.USER }}
-    key: ${{ secrets.SSHK }}
-    script: whoami
+        host: ${{ secrets.TRTITONHOST }}
+        username: ${{ secrets.USER }}
+        password: ${{ secrets.SSHK }}
+        port: ${{ secrets.PORT }}
+        script: whoami
