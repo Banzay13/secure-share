@@ -11,7 +11,7 @@ jobs:
       with:
         host: ${{ secrets.TRTITONHOST }}
         username: ${{ secrets.USER }}
-        password: ${{ secrets.SSHK }}
+        key: ${{ secrets.SSHK }}
         port: ${{ secrets.PORT }}
         script: whoami
 
