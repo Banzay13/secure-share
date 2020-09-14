@@ -1,0 +1,7 @@
+- name: executing remote ssh commands using ssh key
+  uses: appleboy/ssh-action@master
+  with:
+    host: ${{ secrets.TRTITONHOST }}
+    username: ${{ secrets.USER }}
+    key: ${{ secrets.SSHK }}
+    script: whoami
