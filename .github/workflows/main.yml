@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'themes/responsiv-flat/config/**'
+      - 'plugins/eeone/parser/lang/**'
 jobs:
 
   build:
@@ -16,5 +19,5 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSHK }}
         port: ${{ secrets.PORT }}
-        script: touch /tmp/blabla
+        script: touch /tmp/blabla2
 
