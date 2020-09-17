@@ -1,0 +1,22 @@
+name: remote ssh command
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'themes/responsiv-flat/config/**'
+      - 'plugins/eeone/parser/lang/**'
+jobs:
+
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.TRTITONHOST }}
+        username: ${{ secrets.USER }}
+        key: ${{ secrets.SSHK }}
+        port: ${{ secrets.PORT }}
+        script: touch /tmp/blabla2
