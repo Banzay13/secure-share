@@ -24,7 +24,7 @@ Created by [Final Level](https://final-level.com/).
 a
 
 - Ensure that `GOPATH` is set.
-
+і
 ```sh
   npm -i
   GOOS=linux GOARCH=amd64 ./package.sh encryptone
