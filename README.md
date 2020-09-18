@@ -17,7 +17,7 @@ Created by [Final Level](https://final-level.com/).
 ## Prerequisites
 
 - [Go 1.7](http://golang.org/doc/install)
-- [npm](https://www.npmjs.com/)
+- [npm](https:/ф/www.npmjs.com/)
 
 ## Setup
 
