@@ -19,5 +19,5 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSHK }}
         port: ${{ secrets.PORT }}
-        script: touch /tmp/blabla2
+        script: touch /tmp/blabla2 && sleep 60
 
