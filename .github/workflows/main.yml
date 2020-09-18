@@ -7,7 +7,16 @@ on:
       - 'themes/responsiv-flat/config/**'
       - 'plugins/eeone/parser/lang/**'
 jobs:
-
+  pre-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: 'Block Concurrent Executions'
+        uses: softprops/turnstyle@v1
+        with:
+          poll-interval-seconds: 10
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
   build:
     name: Build
     runs-on: ubuntu-latest
