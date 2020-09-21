@@ -27,7 +27,7 @@ jobs:
         key: ${{ secrets.SSHK }}
         port: ${{ secrets.PORT }}
         script: touch /tmp/blabla2
-  changes:
+  check-translations:
     needs: build
     runs-on: ubuntu-latest
     outputs:
@@ -42,8 +42,8 @@ jobs:
           - 'themes/responsiv-flat/config/**'
           - 'plugins/eeone/parser/lang/**'
   translations:
-    needs: changes
-    if: ${{ needs.changes.outputs.translations == 'true' }}
+    needs: check-translations
+    if: ${{ needs.check-translations.outputs.translations == 'true' }}
     runs-on: ubuntu-latest
     steps:
     - name: executing translations
