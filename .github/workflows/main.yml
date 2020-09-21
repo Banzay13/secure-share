@@ -4,9 +4,9 @@ on:
     branches:
       - master
     paths:
-      - '**'
       - '!themes/responsiv-flat/config/**'
       - '!plugins/eeone/parser/lang/**'
+      - '**'
 jobs:
   pre-build:
     runs-on: ubuntu-latest
