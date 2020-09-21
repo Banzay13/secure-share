@@ -12,7 +12,7 @@ Created by [Final Level](https://final-level.com/).
 
 - The server receives your information encrypted and cannot decrypt it, because the link or the passphrase never send to the server.
 
-- After you send the link and the passphrase via any kind of commun ication, the recipient browser decrypts it and the information is deleted from the server.
+- After you send the link and the pasassphrase via any kind of commun ication, the recipient browser decrypts it and the information is deleted from the server.
 
 
 ## Prerequisites
