@@ -1,6 +1,7 @@
 # Encrypt.One
 
-Tasdhe main goal of `https://encrypt.one` is to make sensitive information sharing
+Tasasd
+dhe main goal of `https://encrypt.one` is to make sensitive information sharing
 safe and secure. it was achieved by using full client-side encryption model.
 
 Created by [Final Level](https://final-level.com/).
