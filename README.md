@@ -7,7 +7,7 @@ Created by [Final Level](https://final-level.com/).
 
 ## Advantages
 
-- Before information is sent to the server it is encrypted (by AES 256) in your browser with a randomly generated key or your passphrase by [crypto-js](https://github.com/brix/crypto-js).
+- Before insdfsfsformation is sent to the server it is encrypted (by AES 256) in your browser with a randomly generated key or your passphrase by [crypto-js](https://github.com/brix/crypto-js).
 
 - The server receives your information encrypted and cannot decrypt it, because the link or the passphrase never send to the server.
 
