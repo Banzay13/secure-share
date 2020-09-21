@@ -30,6 +30,6 @@ a
   GOOS=linux GOARCH=amd64 ./package.sh encryptone
 ```
 
-## Run
+### Run
 - Ensure that `STORAGE_TYPE` is set to disk and storage variables (eg. `DISK_STORAGE_PATHS`) if you want to store your data permanently.
 - Set `USE_HASHING=1` for assets hashing
